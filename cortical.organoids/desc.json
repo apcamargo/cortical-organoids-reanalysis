@@ -1,0 +1,6 @@
+{
+  "coordFiles": [
+    "Seurat_tsne.coords.tsv.gz",
+    "Seurat_umap.coords.tsv.gz"
+  ]
+}

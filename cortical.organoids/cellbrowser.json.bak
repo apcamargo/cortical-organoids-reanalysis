@@ -1,0 +1,23 @@
+{
+  "name": "cortical.organoids",
+  "shortLabel": "cortical.organoids",
+  "exprMatrix": "exprMatrix.tsv.gz",
+  "meta": "meta.tsv",
+  "geneIdType": "auto",
+  "clusterField": "Batch",
+  "labelField": "Batch",
+  "enumFields": [
+    "Batch"
+  ],
+  "coords": [
+    {
+      "file": "/media/apcamargo/SANDISK/LGE17/scRNA-Seq/cellbrowser/tsne.coords.tsv",
+      "shortLabel": "Seurat tsne"
+    },
+    {
+      "file": "/media/apcamargo/SANDISK/LGE17/scRNA-Seq/cellbrowser/umap.coords.tsv",
+      "shortLabel": "Seurat umap"
+    }
+  ],
+  "inDir": ""
+}

@@ -1,0 +1,122 @@
+{
+  "fileVersions": {
+    "inMeta": {
+      "fname": "/media/apcamargo/SANDISK/LGE17/scRNA-Seq/cellbrowser/meta.tsv",
+      "md5": "d2fb2b531a",
+      "size": 442915,
+      "mtime": "2020-07-31 17:06:22"
+    },
+    "outMeta": {
+      "fname": "website/cortical.organoids/meta.tsv",
+      "md5": "d2fb2b531a",
+      "size": 442915,
+      "mtime": "2020-07-31 17:11:56"
+    },
+    "inMatrix": {
+      "fname": "/media/apcamargo/SANDISK/LGE17/scRNA-Seq/cellbrowser/exprMatrix.tsv.gz",
+      "md5": "0e54f44b16",
+      "size": 129414576,
+      "mtime": "2020-07-31 17:06:22"
+    },
+    "outMatrix": {
+      "fname": "website/cortical.organoids/exprMatrix.tsv.gz",
+      "md5": "54c13d7820",
+      "size": 136345437,
+      "mtime": "2020-07-31 17:15:44"
+    },
+    "conf": {
+      "fname": "/media/apcamargo/SANDISK/LGE17/scRNA-Seq/cellbrowser/cellbrowser.conf",
+      "md5": "526f11c294",
+      "size": 409,
+      "mtime": "2020-07-31 17:06:22"
+    }
+  },
+  "sampleCount": 12032,
+  "matrixWasFiltered": true,
+  "metaFields": [
+    {
+      "name": "Cell",
+      "label": "Cell",
+      "type": "uniqueString",
+      "maxSize": 18,
+      "diffValCount": 12032,
+      "md5": "9dff20f754"
+    },
+    {
+      "name": "nCount_RNA",
+      "label": "nCount_RNA",
+      "arrType": "float32",
+      "type": "int",
+      "diffValCount": 5145,
+      "md5": "1d871233c6"
+    },
+    {
+      "name": "nFeature_RNA",
+      "label": "nFeature_RNA",
+      "arrType": "float32",
+      "type": "int",
+      "diffValCount": 1787,
+      "md5": "73920ac91c"
+    },
+    {
+      "name": "Batch",
+      "label": "Batch",
+      "type": "enum",
+      "valCounts": [
+        [
+          "6_month",
+          4256
+        ],
+        [
+          "10_month",
+          3368
+        ],
+        [
+          "1_month",
+          2327
+        ],
+        [
+          "3_month",
+          2081
+        ]
+      ],
+      "arrType": "Uint8",
+      "diffValCount": 4,
+      "md5": "09493f974f"
+    }
+  ],
+  "matrixArrType": "Float32",
+  "labelField": "Batch",
+  "coords": [
+    {
+      "name": "coords_0",
+      "shortLabel": "Seurat tsne",
+      "md5": "1440dda7f4",
+      "minX": 0,
+      "maxX": 65534,
+      "minY": 0,
+      "maxY": 65534,
+      "type": "Uint16",
+      "labelMd5": "d41d8cd98f"
+    },
+    {
+      "name": "coords_1",
+      "shortLabel": "Seurat umap",
+      "md5": "f333044c5e",
+      "minX": 0,
+      "maxX": 65535,
+      "minY": 0,
+      "maxY": 65535,
+      "type": "Uint16",
+      "labelMd5": "d41d8cd98f"
+    }
+  ],
+  "hasFiles": [
+    "datasetDesc"
+  ],
+  "markers": [],
+  "name": "cortical.organoids",
+  "shortLabel": "cortical.organoids",
+  "clusterField": "Batch",
+  "md5": "08d8db0a27"
+}
