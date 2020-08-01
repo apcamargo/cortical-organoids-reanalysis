@@ -46,6 +46,10 @@ so_combined <- IntegrateData(anchorset = anchors, dims = 1:30)
 DefaultAssay(so_combined) <- "integrated"
 so_combined <- ScaleData(so_combined)
 
+so_combined <- FindNeighbors(so_combined, dims = 1:10)
+so_combined <- FindClusters(so_combined, resolution = 0.5)
+markers <- FindAllMarkers(so_combined, only.pos = TRUE, min.pct = 0.25, logfc.threshold = 0.25)
+
 so_combined <- RunPCA(so_combined)
 so_combined <- RunUMAP(so_combined, dims = 1:30, umap.method = "uwot")
 so_combined <- RunTSNE(so_combined)
