@@ -4,10 +4,16 @@
   "exprMatrix": "exprMatrix.tsv.gz",
   "meta": "meta.tsv",
   "geneIdType": "auto",
-  "clusterField": "Batch",
-  "labelField": "Batch",
+  "clusterField": "Cluster",
+  "labelField": "Cluster",
   "enumFields": [
-    "Batch"
+    "Cluster"
+  ],
+  "markers": [
+    {
+      "file": "/media/apcamargo/SANDISK/LGE17/scRNA-Seq/cellbrowser/markers.tsv",
+      "shortLabel": "Seurat Cluster Markers"
+    }
   ],
   "coords": [
     {

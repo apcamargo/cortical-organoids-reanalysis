@@ -1,36 +1,37 @@
 {
   "fileVersions": {
-    "inMeta": {
-      "fname": "/media/apcamargo/SANDISK/LGE17/scRNA-Seq/cellbrowser/meta.tsv",
-      "md5": "d2fb2b531a",
-      "size": 442915,
-      "mtime": "2020-07-31 17:06:22"
-    },
-    "outMeta": {
-      "fname": "website/cortical.organoids/meta.tsv",
-      "md5": "d2fb2b531a",
-      "size": 442915,
-      "mtime": "2020-07-31 17:11:56"
-    },
     "inMatrix": {
       "fname": "/media/apcamargo/SANDISK/LGE17/scRNA-Seq/cellbrowser/exprMatrix.tsv.gz",
-      "md5": "0e54f44b16",
-      "size": 129414576,
-      "mtime": "2020-07-31 17:06:22"
+      "md5": "5c5d17d179",
+      "size": 129312049,
+      "mtime": "2020-08-01 18:12:34"
     },
     "outMatrix": {
       "fname": "website/cortical.organoids/exprMatrix.tsv.gz",
-      "md5": "54c13d7820",
-      "size": 136345437,
-      "mtime": "2020-07-31 17:15:44"
+      "md5": "dc28978a39",
+      "size": 130336435,
+      "mtime": "2020-08-01 18:13:40"
+    },
+    "inMeta": {
+      "fname": "/media/apcamargo/SANDISK/LGE17/scRNA-Seq/cellbrowser/meta.tsv",
+      "md5": "800c3e01f4",
+      "size": 352560,
+      "mtime": "2020-08-01 18:24:56"
+    },
+    "outMeta": {
+      "fname": "website/cortical.organoids/meta.tsv",
+      "md5": "800c3e01f4",
+      "size": 352560,
+      "mtime": "2020-08-01 18:25:02"
     },
     "conf": {
       "fname": "/media/apcamargo/SANDISK/LGE17/scRNA-Seq/cellbrowser/cellbrowser.conf",
-      "md5": "526f11c294",
-      "size": 409,
-      "mtime": "2020-07-31 17:06:22"
+      "md5": "b7f9a45cb7",
+      "size": 490,
+      "mtime": "2020-08-01 18:12:36"
     }
   },
+  "matrixArrType": "Float32",
   "sampleCount": 12032,
   "matrixWasFiltered": true,
   "metaFields": [
@@ -40,23 +41,7 @@
       "type": "uniqueString",
       "maxSize": 18,
       "diffValCount": 12032,
-      "md5": "9dff20f754"
-    },
-    {
-      "name": "nCount_RNA",
-      "label": "nCount_RNA",
-      "arrType": "float32",
-      "type": "int",
-      "diffValCount": 5145,
-      "md5": "1d871233c6"
-    },
-    {
-      "name": "nFeature_RNA",
-      "label": "nFeature_RNA",
-      "arrType": "float32",
-      "type": "int",
-      "diffValCount": 1787,
-      "md5": "73920ac91c"
+      "md5": "e261c17133"
     },
     {
       "name": "Batch",
@@ -82,11 +67,68 @@
       ],
       "arrType": "Uint8",
       "diffValCount": 4,
-      "md5": "09493f974f"
+      "md5": "1a1fa862b2"
+    },
+    {
+      "name": "Cluster",
+      "label": "Cluster",
+      "type": "enum",
+      "valCounts": [
+        [
+          "0",
+          2290
+        ],
+        [
+          "1",
+          1962
+        ],
+        [
+          "2",
+          1940
+        ],
+        [
+          "3",
+          1679
+        ],
+        [
+          "4",
+          1086
+        ],
+        [
+          "5",
+          932
+        ],
+        [
+          "6",
+          771
+        ],
+        [
+          "7",
+          435
+        ],
+        [
+          "8",
+          394
+        ],
+        [
+          "9",
+          298
+        ],
+        [
+          "10",
+          214
+        ],
+        [
+          "11",
+          31
+        ]
+      ],
+      "arrType": "Uint8",
+      "diffValCount": 12,
+      "md5": "eca9ff7fcc"
     }
   ],
-  "matrixArrType": "Float32",
-  "labelField": "Batch",
+  "labelField": "Cluster",
   "coords": [
     {
       "name": "coords_0",
@@ -114,9 +156,100 @@
   "hasFiles": [
     "datasetDesc"
   ],
-  "markers": [],
+  "topMarkers": {
+    "0": [
+      "BHLHE22",
+      "NEUROD2",
+      "SOX11",
+      "CSRP2",
+      "TUBB3"
+    ],
+    "1": [
+      "CDH6",
+      "PTMA",
+      "RPL13AP5",
+      "SOX11",
+      "RPL3P4"
+    ],
+    "2": [
+      "VIM",
+      "ID4",
+      "TTYH1",
+      "SOX2",
+      "C1orf61"
+    ],
+    "3": [
+      "NEUROD6",
+      "STMN2",
+      "RTN1",
+      "SNAP25",
+      "SNCA"
+    ],
+    "4": [
+      "NNAT",
+      "TMSB4X",
+      "IGFBPL1",
+      "HNRNPA1",
+      "NHLH1"
+    ],
+    "5": [
+      "PTN",
+      "CLU",
+      "TTYH1",
+      "PEA15",
+      "FTL"
+    ],
+    "6": [
+      "PCLAF",
+      "TUBA1B",
+      "HMGB2",
+      "H2AFZ",
+      "HMGN2"
+    ],
+    "7": [
+      "PTTG1",
+      "CDC20",
+      "BIRC5",
+      "HMGB2",
+      "CCNB2"
+    ],
+    "8": [
+      "NTRK2",
+      "S100B",
+      "EDNRB",
+      "CRYAB",
+      "PLAAT4"
+    ],
+    "9": [
+      "FOLR1",
+      "IGFBP7",
+      "ENPP2",
+      "TTR",
+      "RARRES2"
+    ],
+    "10": [
+      "SFRP4",
+      "ANXA1",
+      "COL1A1",
+      "NUPR1",
+      "DCN"
+    ],
+    "11": [
+      "PTN",
+      "TTYH1",
+      "SFRP1",
+      "FDFT1",
+      "MSMO1"
+    ]
+  },
+  "markers": [
+    {
+      "name": "markers_0",
+      "shortLabel": "Seurat Cluster Markers"
+    }
+  ],
   "name": "cortical.organoids",
   "shortLabel": "cortical.organoids",
-  "clusterField": "Batch",
-  "md5": "08d8db0a27"
+  "clusterField": "Cluster",
+  "md5": "1b27497f4a"
 }
